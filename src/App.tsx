@@ -5,9 +5,11 @@ import { store } from "./redux/store";
 import ScrollToTop from "./components/Commons/ScrollToTop";
 
 function App() {
+  const basename = import.meta.env.BASE_URL 
+
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename={basename}>
         <ScrollToTop />
         <AppRoutes />
       </Router>
