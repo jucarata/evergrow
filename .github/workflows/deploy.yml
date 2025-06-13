@@ -23,7 +23,6 @@ jobs:
       - name: Build
         env:
           VITE_API_URL:    ${{ secrets.VITE_API_URL }}
-          VITE_OTRA_VARIABLE: ${{ secrets.VITE_OTRA_VARIABLE }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
