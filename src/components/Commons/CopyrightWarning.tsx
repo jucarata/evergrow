@@ -6,4 +6,4 @@ export const Warning = () => {
             </h3>
         </div>
     )
-} 
+}
